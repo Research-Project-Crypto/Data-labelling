@@ -41,7 +41,7 @@ namespace program
             {
                 std::unique_ptr<candle> candle_data = std::make_unique<candle>();
 
-                file.read((char*)candle_data.get(), 8 * 16);
+                file.read((char*)candle_data.get(), 8 * 18);
 
                 m_candles.push_back(std::move(candle_data));
             }
